@@ -1,1 +1,244 @@
 @import "nullstyle.scss";
+@import "fonts.scss";
+
+$red-color: #ec2929;
+
+%grayd {
+    font-size: 16px;
+    // width: 100%;
+
+    line-height: 20px;
+    color: #9d9d9d;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    height: 100%;
+    font-size: 22px;
+    color: #212322;
+    font-family: "Montserrat", sans-serif;
+    background-color: #fff;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.classing {
+}
+
+.categories {
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        padding: 10px 0 15px 30px;
+    }
+}
+.category {
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            max-height: 80px;
+            max-width: 80px;
+            margin: 0 auto;
+        }
+
+        span {
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+}
+.wrapper {
+}
+
+.header {
+    &_main__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px;
+    }
+    &__logo {
+        margin-right: 250px;
+    }
+    &__menu {
+        display: flex;
+        li {
+            &:not(:last-child) {
+                padding-right: 22px;
+            }
+            font-weight: 700;
+            color: $red-color;
+            list-style-type: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            line-height: 19px;
+            font-style: normal;
+        }
+    }
+    &__cart_menu {
+        position: relative;
+        height: 25px;
+        width: 25px;
+    }
+    &__categories {
+        color: white;
+        font-weight: 700;
+        font-size: 16px;
+        background-color: $red-color;
+    }
+}
+.card_btn {
+    background: url("../img/cart.svg") 0 0 no-repeat;
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    overflow: visible;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.footer {
+    &__body {
+        border-top: 1px solid #cccccc;
+        padding: 50px 20px 30px 20px;
+    }
+}
+
+.promo {
+    &__body {
+    }
+    &__image {
+        img {
+            width: 80%;
+            height: 80%;
+            display: block;
+            margin: 30px auto;
+        }
+    }
+}
+
+.item {
+    &__image {
+        img {
+            height: 70%;
+            width: 70%;
+            margin: 0 auto;
+            object-fit: cover;
+        }
+    }
+    &__name {
+        color: #000;
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 700;
+        display: inline-block;
+    }
+    &__ingridients {
+        width: 70%;
+
+        @extend %grayd;
+        h3 {
+            
+            margin-top: 7px;
+            margin-bottom: 7px;
+        }
+    }
+    &__size {
+        @extend %grayd;
+        &::after {
+            content: " г";
+            
+        }
+        display: inline-block;
+        margin-bottom: 2cqmin;
+    }
+    &__buy_place {
+        display: flex;
+        // justify-content: space-between;
+        align-items: end;
+    }
+    &__buy_btn {
+        padding: 12px 12px 12px 50px;
+        border: 1px solid $red-color;
+        color: $red-color;
+        position: relative;
+        font-weight: 700;
+        line-height: 19px;
+        font-size: 16px;
+        & :visited {
+            color: inherit;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 12px;
+            left: 8px;
+            // transform: translateY(-50%);
+            background-size: contain;
+            height: 100%;
+            width: 100%;
+
+            background-origin: border-box;
+            margin-left: 10px;
+            // content: '';
+            background: url("../img/cart.svg") 0 0/20px 20px no-repeat;
+        }
+    }
+    &__price {
+        h3 {
+            color: #333;
+            font-size: 24px;
+            text-align: center;
+            font-weight: 700;
+            line-height: 29px;
+            &::after {
+                content: " грн.";
+                font-size: 0.8em;
+            }
+        }
+    }
+}
+
+.main {
+    &__body {
+    }
+    &__title {
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0 45px 0;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        & :not(:last-child){
+            margin-right: 40px;
+        }
+
+    }
+    &__item {
+        flex: 0 1 22%;
+    }
+}
+.container {
+}
