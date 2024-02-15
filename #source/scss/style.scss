@@ -177,7 +177,10 @@ body {
     &__buy_btn {
         padding: 12px 12px 12px 50px;
         border: 1px solid $red-color;
-        color: $red-color;
+        a{
+            color: $red-color !important;
+        }
+
         position: relative;
         font-weight: 700;
         line-height: 19px;
@@ -185,6 +188,8 @@ body {
         & :visited {
             color: inherit;
         }
+        
+
         &::before {
             content: "";
             position: absolute;

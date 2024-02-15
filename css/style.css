@@ -337,11 +337,13 @@ body {
 .item__buy_btn {
   padding: 12px 12px 12px 50px;
   border: 1px solid #ec2929;
-  color: #ec2929;
   position: relative;
   font-weight: 700;
   line-height: 19px;
   font-size: 16px;
+}
+.item__buy_btn a {
+  color: #ec2929 !important;
 }
 .item__buy_btn :visited {
   color: inherit;
