@@ -1,10 +1,13 @@
 <h1>Верстка сайта SushiFamily</h1>
 
+**Сайт**: https://ndkwa.github.io/SushiFamily-Layout/
+
+<hr>
+
 Цель верстки сайта - развитие навыков разработки и верстки веб-сайтов.
 
 Сайт поддерживает адаптивный дизайн для устройств с различной шириной экрана.
 
 Создано несколько страниц под одним шаблоном, которые наполненные разным контентом. Фото на страницы находятся ниже:
 
-![Image alt](https://github.com/ndkwa/SushiFamily-Layout/raw/develop/other/example.png)
-
+![Image alt](https://github.com/ndkwa/SushiFamily-Layout/raw/master/other/example.png)
