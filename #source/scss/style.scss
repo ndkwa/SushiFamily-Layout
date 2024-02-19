@@ -599,3 +599,10 @@ body {
 .kyivstar { }
 .vodafone { }
 .social_medias { }
+
+
+.no_plus1{
+    &::after{
+        content: none !important;
+    }
+}

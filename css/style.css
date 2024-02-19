@@ -663,3 +663,7 @@ body {
 .footer__item:not(:last-child) {
   margin-right: 30px;
 }
+
+.no_plus1::after {
+  content: none !important;
+}
