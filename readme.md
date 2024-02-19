@@ -10,4 +10,4 @@
 
 Создано несколько страниц под одним шаблоном, которые наполненные разным контентом. Фото на страницы находятся ниже:
 
-![Image alt](https://github.com/ndkwa/SushiFamily-Layout/raw/master/other/example.png)
+![Image alt](https://github.com/ndkwa/SushiFamily-Layout/raw/main/other/example.png)
